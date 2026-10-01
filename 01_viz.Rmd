@@ -53,8 +53,7 @@ Aesthetics are up to you.
 
 ```{r}
 weather_df |>
-  ggplot(aes(x = tmin, y = tmax)) +
-  geom_point(aes(color = name)) +
+  ggplot(aes(x = tmin, y = tmax, color = name)) +
   geom_smooth(se = FALSE)
 ```
 

@@ -110,18 +110,14 @@ Aesthetics are up to you.
 
 ``` r
 weather_df |>
-  ggplot(aes(x = tmin, y = tmax)) +
-  geom_point(aes(color = name)) +
+  ggplot(aes(x = tmin, y = tmax, color = name)) +
   geom_smooth(se = FALSE)
 ```
 
-    ## `geom_smooth()` using method = 'gam' and formula = 'y ~ s(x, bs = "cs")'
+    ## `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 
     ## Warning: Removed 17 rows containing non-finite outside the scale range
     ## (`stat_smooth()`).
-
-    ## Warning: Removed 17 rows containing missing values or values outside the scale range
-    ## (`geom_point()`).
 
 ![](01_viz_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
 
