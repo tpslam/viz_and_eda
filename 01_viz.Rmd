@@ -163,4 +163,9 @@ ggp_weather =
 ggsave("plots/ggp_weather.pdf", ggp_weather)
 ```
 
+```{r, fig.width = 12, fig.height = 12}
+weather_df |> 
+  ggplot(aes(x = tmin, y = tmax)) +
+  geom_point()
+```
 
