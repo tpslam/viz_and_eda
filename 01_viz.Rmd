@@ -168,4 +168,3 @@ weather_df |>
   ggplot(aes(x = tmin, y = tmax)) +
   geom_point()
 ```
-
