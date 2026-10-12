@@ -259,4 +259,3 @@ fas_df |>
   geom_boxplot() +
   facet_grid(day_of_tx ~ outcome)
 ```
-
